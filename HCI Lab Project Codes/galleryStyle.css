@@ -1,0 +1,396 @@
+*{
+    margin: 0px;
+}
+
+.bkg{
+    position: relative;
+    background-image: url(./assets/gallerybkg.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar */
+
+.top{
+    height: 113px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Top Body */
+
+.topBody{
+    padding-top: 50px;
+}
+
+.topBody, .sort, .flexType, .items{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.topBody, .items{
+    color: white;
+}
+
+.for{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.best{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 15px;
+}
+
+.desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 35px;
+}
+
+.topBlack{
+    background-color: black;
+    background: rgba(0, 0, 0, 0.4);
+    padding-top: 25px;
+    padding-left: 122px;
+    padding-bottom: 25px;
+}
+
+.moreBtn{
+    display: flex;
+    text-align: center;
+    background: #505050;
+    border: 1px solid #FF9900;
+    border-radius: 20px;
+}
+
+.arrow{
+    margin-top: 7px;
+    width: 22%;
+}
+
+.more{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: #FF9900;
+}
+
+.fade{
+    padding-top: 60px;
+    background: linear-gradient(360deg, #F1EEE9 0.1%, rgba(241, 238, 233, 0) 130%);
+}
+
+/* Lower Body */
+
+.white{
+    background-color: white;
+    padding-left: 122px;
+}
+
+.fades{
+    padding-top: 10px;
+    background: linear-gradient(180deg, #F1EEE9 1%, rgba(241, 238, 233, 0) 130%);
+}
+
+.sort{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.flexType{
+    display: flex;
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#wood, #elec, #bass{
+    height: 48px;
+    width: 128px;
+    border: 2px solid #FF9900;
+    background-color: white;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#elec, #bass{
+    margin-left: 25px;
+}
+
+/* Items */
+
+.items{
+    display: flex;
+    flex-direction: column;
+}
+
+.guitarLong, .guitarShort{
+    padding-left: 83px;
+    padding-top: 40px;
+}
+
+.guitarLong{
+    display: flex;
+    width: 1115px;
+    height: 215px;
+    background: #E37D2D;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.nameDesc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.priceFlexLong{
+    margin-top: 25px;
+    display: flex;
+}
+
+.idrPrice{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.buyBtn{
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 30px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid white;
+    height: 35px;
+}
+
+.tag{
+    width: 20%;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.buy{
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+
+.picLong{
+    margin-left: 200px;
+    height: 90%;
+}
+
+.guitarFlex{
+    display: flex;
+}
+
+.guitarShort{
+    display: flex;
+    width: 500px;
+    height: 215px;
+    background: #E37D2D;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.priceFlexShort{
+    margin-top: 50px;
+    display: flex;
+}
+
+.picShort{
+    margin-left: 30px;
+    height: 90%;
+}
+
+.gap{
+    margin-left: 31px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 800px){
+    /* Navbar */
+    .top{
+        height: 90px;
+    }
+
+    /* Top Body */
+
+    .topBody{
+        padding-top: 40px;
+    }
+
+    .for{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .best{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .desc{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .topBlack{
+        padding-top: 25px;
+        padding-left: 56px;
+        padding-bottom: 25px;
+    }
+
+    .arrow{
+        margin-top: 7px;
+        width: 15%;
+    }
+
+    .more{
+        font-size: 15px;
+        line-height: 24px;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+    .fade{
+        padding-top: 60px;
+        background: linear-gradient(360deg, #F1EEE9 0.1%, rgba(241, 238, 233, 0) 130%);
+    }
+
+    /* Lower Body */
+
+    .white{
+        padding-left: 56px;
+    }
+
+    .fades{
+        padding-top: 10px;
+    }
+
+    .sort{
+        font-size: 18px;
+    }
+
+    .flexType{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #wood, #elec, #bass{
+        height: 44px;
+        width: 84px;
+        border: 2px solid #FF9900;
+        background-color: white;
+        border-radius: 40px;
+        padding-top: 7px;
+        padding-bottom: 25px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* Items */
+
+    .guitarLong, .guitarShort{
+        padding-left: 12px;
+        padding-top: 15px;
+    }
+
+    .guitarLong{
+        width: 446px;
+        height: 86px;
+    }
+
+    .name{
+        font-size: 13px;
+        line-height: 1px;
+        margin-bottom: 13px;
+    }
+
+    .nameDesc{
+        font-size: 10px;
+        line-height: 11px;
+        margin-bottom: 10px;
+    }
+
+    .priceFlexLong{
+        margin-top: 0px;
+    }
+
+    .idrPrice{
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .buyBtn{
+        font-size: 10px;
+        line-height: 1px;
+        margin-left: 20px;
+        border-radius: 20px;
+        height: 18px;
+    }
+
+    .tag{
+        width: 20%;
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+
+    .buy{
+        margin-left: 10px;
+        margin-right: 1px;
+        margin-top: 7px;
+    }
+
+    .picLong{
+        margin-left: 40px;
+        margin-right: 20px;
+        height: 70%;
+    }
+
+    .guitarShort{
+        width: 200px;
+        height: 86px;
+    }
+
+    .priceFlexShort{
+        margin-top: 0px;
+    }
+
+    .picShort{
+        margin-left: 1px;
+        margin-right: 7px;
+        height: 50%;
+    }
+
+}

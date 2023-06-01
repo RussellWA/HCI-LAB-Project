@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="memberStyle.css">
+    <link rel="stylesheet" href="headerFooter.css">
+    <script src="./member.js" defer></script>
+    <title>Tanaka Guitar</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="bkg">
+
+        <div class="top">
+            <nav class="header">
+                <span class="bar">
+                    <img src="./assets/logo.png" class="logo">
+                    <span class="navText">
+                        <a href="./home.html" class="hrefText">Home</a>
+                        <a href="./gallery.html" class="hrefText">Gallery</a>
+                        <a href="./about.html" class="hrefText">About Us</a>
+                        <a href="./member.html" class="hrefText">Member</a>
+                        <a href="./contact.html" class="hrefText">Contact Us</a>
+                    </span>
+                </span>
+            </nav>
+        </div>
+        
+        <!-- Body -->
+        <div class="topBody">
+            <div class="topBlack">
+                <div class="member">BECOME A MEMBER</div>
+                <div class="join">Join us for many benefits and promotion</div>
+
+                <!-- Form -->
+                <form action="" name="memberForm" onsubmit="return validate()">
+                    <div class="flexInput">
+                        <div class="leftInput">
+
+                            <!-- Name -->
+                            <div class="input">
+                                <label for="name" class="inputText">Full Name</label> <br>
+                                <input type="text" name="name" id="name" class="leftBox" placeholder="Type Here">
+                            </div>
+
+                            <!-- Email -->
+                            <div class="input">
+                                <label for="email" class="inputText">Email Address</label> <br>
+                                <input type="email" name="email" id="email" class="leftBox" placeholder="Type Here">
+                            </div>
+                        </div>
+
+                        <div class="middleInput">
+
+                            <!-- Password -->
+                            <div class="input">
+                                <label for="password" class="inputText">Password</label> <br>
+                                <input type="password" name="password" id="password" class="rightBox" placeholder="Type Here">
+                            </div>
+
+                            <!-- Show Password -->
+                            <div class="input" id="showDiv">
+                                <label for="" class="container">
+                                    <input type="checkbox" name="show" id="show" onclick="showPass(0)">
+                                    <span class="newCheck"></span>
+                                </label>
+                                <label for="show" class="orangeText" id="passDiv">Show Password</label>
+                                <div class="gap"></div>
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div class="input" class="inputText">
+                                <label for="confirm">Confirm Password</label> <br>
+                                <input type="password" name="confirm" id="confirm" class="rightBox" placeholder="Type Here">
+                            </div>
+
+                            <!-- Show Password Confirmation -->
+                            <div class="input" id="showDiv">
+                                <label for="" class="container">
+                                    <input type="checkbox" name="show" id="show" onclick="showPass(1)">
+                                    <span class="newCheck"></span>
+                                </label>
+                                <label for="show" class="orangeText" id="passDiv">Show Password</label>
+                            </div>
+                        </div>
+
+                        <div class="rightInput">
+
+                            <!-- Gender -->
+                            <div class="input">
+                                <label for="gender" class="inputText">Gender</label> <br>
+                                <div class="genderFlex">
+                                    <label for="" class="contain">
+                                        <input type="radio" name="gender" id="male" value="male">
+                                        <span class="newRadio"></span>
+                                    </label>
+                                    <p class="orangeText" id="genderText">Male</p>
+                                    <label for="" class="contain">
+                                        <input type="radio" name="gender" id="female" value="female">
+                                        <span class="newRadio"></span>
+                                    </label>
+                                    <p class="orangeText" id="genderText">Female</p>
+                                </div>
+                            </div>
+                            <div class="showGap"></div>
+
+                            <!-- Daily Letter -->
+                            <div class="input">
+                                <label for="" class="container">
+                                    <input type="checkbox" name="letter" id="letter">
+                                    <span class="newCheck"></span>
+                                </label>
+                                <label for="letter" class="orangeText" id="dailyText">Get daily letter</label>
+                            </div>
+                            <div class="showGap1"></div>
+
+                            <!-- Terms and Conditions -->
+                            <div class="input">
+                                <label for="" class="container">
+                                    <input type="checkbox" name="tnc" id="tnc">
+                                    <span class="newCheck"></span>
+                                </label>
+                                <label for="tnc" class="orangeText" id="dailyText">I agree to the terms and conditions.</label>
+                            </div>
+                            <div class="showGap"></div>
+
+                            <!-- Submit -->
+                            <button type="submit" class="submitBtn">Submit</button>
+
+                            <div id="errorMsg"></div>
+                            <div id="dailyMsg"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="fade">
+        </div>
+    </div>
+    <div class="fades"></div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="flexFoot">
+            <div class="get">GET</div>
+            <div class="late">OUR LATEST PRODUCT</div>
+            <div class="now">NOW</div>
+
+            <!-- Social Media -->
+            <img src="./assets/ig.png" class="ig" alt="">
+            <img src="./assets/wa.png" class="wa" alt="">
+            <img src="./assets/fb.png" class="fb" alt="">
+            <img src="./assets/twitter.png" class="tw" alt="">
+        </div>
+
+        <!-- Contact -->
+        <div class="flexCtc">
+            <div class="ctc">You can contact</div>
+            <div class="us">us on :</div>
+
+            <!-- Phone -->
+            <div class="flexPhone">
+                <img src="./assets/phone.png" class="phone" alt="">
+                <div>
+                    <p class="phoneName">Official Tanaka Guitar</p>
+                    <p class="phoneNum">+62-817-2002-1234</p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flexMail">
+                <img src="./assets/mail.png" class="mail" alt="">
+                <div>
+                    <p class="mailName">Email</p>
+                    <p class="mailAdd">tanakaGuitar@real.co.id</p>
+                </div>
+            </div>
+        </div>
+    <footer>
+</body>
+</html>

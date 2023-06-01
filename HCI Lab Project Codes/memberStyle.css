@@ -1,0 +1,452 @@
+*{
+    margin: 0px;
+}
+
+.bkg{
+    position: relative;
+    background-image: url(./assets/memberbkg.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar */
+
+.top{
+    height: 106px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Body */
+
+.topBody{
+    padding-top: 14px;
+}
+
+.topBody{
+    font-family: 'Inter';
+    font-style: normal;
+    color: white;
+}
+
+.member{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+
+.join{
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.topBlack{
+    background-color: black;
+    background: rgba(0, 0, 0, 0.55);
+    padding-top: 70px;
+    padding-bottom: 45px;
+    padding-left: 123px;
+}
+
+.flexInput{
+    display: flex;
+}
+
+.leftInput, .middleInput{
+    margin-right: 80px;
+}
+
+.inputText{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.leftBox, .rightBox{
+    height: 35px;
+    width: 390px;
+    background: #0F0F0F;
+    border: 1px solid #FF9900;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.leftBox{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.rightBox{
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.gap{
+    margin-bottom: 3px;
+}
+
+.orangeText{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FF9900;
+}
+
+::placeholder{
+    color: #FF9900;
+    opacity: 80%;
+}
+
+:focus::placeholder{
+    opacity: 10%;
+}
+
+.leftBox:focus, .rightBox:focus{
+    outline: #FF9900;
+}
+
+input[type=text], input[type=email], input[type=password]{
+    color: #FF9900;
+}
+
+.genderFlex{
+    display: flex;
+    margin-top: 20px;
+}
+
+#showDiv{
+    margin-left: 275px;
+}
+
+#passDiv{
+    margin-left: 27px;
+}
+
+/* Custom Checkbox */
+
+.container{
+    position: relative;
+}
+
+.container input{
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+    height: 18px;
+    width: 18px;
+}
+
+.newCheck, .newRadio{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background-color: #4C4E50;
+}
+
+.newCheck:after, .newRadio:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .newCheck:after{
+    display: block;
+}
+
+.container:hover input ~ .newCheck, .contain:hover input ~ .newRadio{
+    background-color:#73787d;
+    opacity: 70%;
+}
+
+.container .newCheck:after{
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #FF9900;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Custom Radio */
+
+.contain{
+    display: block;
+}
+
+.contain input{
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+    height: 18px;
+    width: 18px;
+}
+
+.contain input:checked ~ .newRadio:after{
+    display: block;
+}
+
+.contain .newRadio:after{
+    left: 3px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    background-color: #FF9900;
+}
+
+.showGap{
+    margin-bottom: 45px;
+}
+
+.showGap1{
+    margin-bottom: 20px;
+}
+
+#genderText{
+    margin-left: 25px;
+    margin-right: 80px;
+}
+
+#dailyText{
+    margin-left: 25px;
+}
+
+.submitBtn{
+    padding: 12px 35px;
+    border-radius: 20px;
+    border-width: 0;
+    background: #FF9900;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#errorMsg{
+    color: #FF9900;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px){
+    
+    /* Navbar */
+
+    .top{
+        height: 106px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    /* Body */
+
+    .topBody{
+        padding-top: 14px;
+    }
+
+    .member{
+        font-size: 35px;
+        line-height: 48px;
+        margin-bottom: 0px;
+    }
+
+    .join{
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+
+    .topBlack{
+        background-color: black;
+        background: rgba(0, 0, 0, 0.55);
+        padding-top: 40px;
+        padding-bottom: 45px;
+        padding-left: 60px;
+    }
+
+    .flexInput{
+        display: block;
+    }
+
+    .leftInput, .middleInput{
+        margin-right: 80px;
+    }
+
+    .inputText{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .leftBox, .rightBox{
+        height: 35px;
+        width: 390px;
+        background: #0F0F0F;
+        border: 1px solid #FF9900;
+        border-radius: 10px;
+        padding-left: 15px;
+    }
+
+    .leftBox{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .rightBox{
+        margin-top: 10px;
+        margin-bottom: 7px;
+    }
+
+    .gap{
+        margin-bottom: 3px;
+    }
+
+    .orangeText{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FF9900;
+    }
+
+    ::placeholder{
+        color: #FF9900;
+        opacity: 80%;
+    }
+
+    :focus::placeholder{
+        opacity: 10%;
+    }
+
+    .leftBox:focus, .rightBox:focus{
+        outline: #FF9900;
+    }
+
+    input[type=text], input[type=email], input[type=password]{
+        color: #FF9900;
+    }
+
+    .genderFlex{
+        display: flex;
+        margin-top: 20px;
+    }
+
+    #showDiv{
+        margin-left: 275px;
+    }
+
+    #passDiv{
+        margin-left: 27px;
+    }
+
+    /* Custom Checkbox */
+
+    .container{
+        position: relative;
+    }
+
+    .container input{
+        position: absolute;
+        opacity: 0;
+        z-index: 10;
+        height: 18px;
+        width: 18px;
+    }
+
+    .newCheck, .newRadio{
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        background-color: #4C4E50;
+    }
+
+    .newCheck:after, .newRadio:after{
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .container input:checked ~ .newCheck:after{
+        display: block;
+    }
+
+    .container:hover input ~ .newCheck, .contain:hover input ~ .newRadio{
+        background-color:#73787d;
+        opacity: 70%;
+    }
+
+    .container .newCheck:after{
+        left: 6px;
+        top: 1px;
+        width: 5px;
+        height: 10px;
+        border: solid #FF9900;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+
+    /* Custom Radio */
+
+    .contain{
+        display: block;
+    }
+
+    .contain input{
+        position: absolute;
+        opacity: 0;
+        z-index: 5;
+        height: 18px;
+        width: 18px;
+    }
+
+    .contain input:checked ~ .newRadio:after{
+        display: block;
+    }
+
+    .contain .newRadio:after{
+        left: 3px;
+        top: 3px;
+        width: 12px;
+        height: 12px;
+        background-color: #FF9900;
+    }
+
+    .showGap{
+        margin-bottom: 45px;
+    }
+
+    .showGap1{
+        margin-bottom: 20px;
+    }
+
+    #genderText{
+        margin-left: 25px;
+        margin-right: 80px;
+    }
+
+    #dailyText{
+        margin-left: 25px;
+    }
+
+    .submitBtn{
+        padding: 12px 35px;
+        border-radius: 20px;
+        border-width: 0;
+        background: #FF9900;
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    #errorMsg{
+        color: #FF9900;
+        margin-bottom: 20px;
+    }
+}

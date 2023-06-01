@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="homeStyle.css">
+    <link rel="stylesheet" href="headerFooter.css">
+    <script src="./code.js" defer></script>
+    <title>Tanaka Guitar</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="bkg">
+
+        <div class="top">
+            <nav class="header">
+                <span class="bar">
+                    <img src="./assets/logo.png" class="logo">
+                    <span class="navText">
+                        <a href="./home.html" class="hrefText">Home</a>
+                        <a href="./gallery.html" class="hrefText">Gallery</a>
+                        <a href="./about.html" class="hrefText">About Us</a>
+                        <a href="./member.html" class="hrefText">Member</a>
+                        <a href="./contact.html" class="hrefText">Contact Us</a>
+                    </span>
+                </span>
+            </nav>
+        </div>
+        
+        <!-- Top Body -->
+        <div class="topBody">
+            <div><p class="new">NEW</p></div>
+            <div><p class="nature">THE SOUND OF NATURE</p></div>
+            <div><p class="here">IS FINALLY HERE</p></div>
+            <div><p class="desc">The latest strings with incredible strength and <br> elasticity, made from natural materials that make you <br> feel like you are in nature</p></div>
+            <a href="./gallery.html"><button class="buyBtn" type="submit"><img src="./assets/tagWhite.png" class="tag" alt="">
+                <span class="buy">Buy Product</span></button></a>
+        </div>
+
+        <div class="fade">
+        </div>
+    </div>
+    <div class="fades"></div>
+
+    <!-- Bottom Body -->
+    <div class="white">
+        <div><p class="best">OUR BEST BRANDS</p></div>
+        <div><p class="ori">100% Original</p></div>
+
+        <!-- Brands -->
+        <div class="brand">
+            <div class="brandBox1" id="box1" onmouseover="show(1)" onmouseleave="hide()"><p class="brandName">Brand A</p></div>
+            <div class="brandBox2" id="box2" onmouseover="show(2)" onmouseleave="hide()"><p class="brandName">Brand B</p></div>
+            <div class="brandBox2" id="box3" onmouseover="show(3)" onmouseleave="hide()"><p class="brandName">Brand C</p></div>
+            <div class="brandBox2" id="box4" onmouseover="show(4)" onmouseleave="hide()"><p class="brandName">Brand D</p></div>
+        </div>
+        <div><p id="hovName"></p></div>
+        <div><p id="hovDesc"></p></div>
+        <div id="divide"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="flexFoot">
+            <div class="get">GET</div>
+            <div class="late">OUR LATEST PRODUCT</div>
+            <div class="now">NOW</div>
+
+            <!-- Social Media -->
+            <img src="./assets/ig.png" class="ig" alt="">
+            <img src="./assets/wa.png" class="wa" alt="">
+            <img src="./assets/fb.png" class="fb" alt="">
+            <img src="./assets/twitter.png" class="tw" alt="">
+        </div>
+
+        <!-- Contact -->
+        <div class="flexCtc">
+            <div class="ctc">You can contact</div>
+            <div class="us">us on :</div>
+
+            <!-- Phone -->
+            <div class="flexPhone">
+                <img src="./assets/phone.png" class="phone" alt="">
+                <div>
+                    <p class="phoneName">Official Tanaka Guitar</p>
+                    <p class="phoneNum">+62-817-2002-1234</p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flexMail">
+                <img src="./assets/mail.png" class="mail" alt="">
+                <div>
+                    <p class="mailName">Email</p>
+                    <p class="mailAdd">tanakaGuitar@real.co.id</p>
+                </div>
+            </div>
+        </div>
+    <footer>
+</body>
+</html>

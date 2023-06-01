@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+}
+
+.bkg{
+    position: relative;
+    background-image: url(./assets/aboutbkg.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+/* Navbar */
+
+.top{
+    height: 106px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Top Body */
+
+.topBody{
+    padding-top: 50px;
+}
+
+.topBody, .orangeBody{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.topBody, .orangeBody{
+    color: white;
+}
+
+.best{
+    margin-top: 35px;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.quote{
+    margin-top: 23px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.desc{
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.topBlack{
+    background-color: black;
+    background: rgba(0, 0, 0, 0.55);
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+
+.fade{
+    padding-top: 200px;
+    background: linear-gradient(360deg, #F1EEE9 0.1%, rgba(241, 238, 233, 0) 105%);
+}
+
+.fades{
+    padding-top: 40px;
+    background: linear-gradient(180deg, #F1EEE9 1%, rgba(241, 238, 233, 0) 130%);
+}
+
+/*  */
+
+.lowerLogo{
+    margin-left: 120px;
+    width: 148px;
+    margin-bottom: 5px;
+}
+
+.lowerBody{
+    background-color: #333333;
+}
+
+.orangeBody{
+    display: flex;
+    column-gap: 200px;
+    background-color: #E37D2D;
+}
+
+.about{
+    margin-top: 35px;
+    margin-left: 70px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.aboutDesc{
+    margin-top: 33px;
+    margin-left: 115px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-indent: 50px;
+}
+
+.quoteFlex{
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 105px;
+    text-align: center;
+}
+
+.aboutQuote{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.aboutName{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.pic{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 1000px;
+}
+
+.aimi{
+    width: 80%;
+}
+
+@media only screen and (max-width: 800px){
+
+    /* Top Body */
+
+    .topBody{
+        padding-top: 50px;
+    }
+
+    .best{
+        margin-top: 10px;
+        font-size: 25px;
+        line-height: 0px;
+    }
+
+    .quote{
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 0px;
+    }
+
+    .desc{
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .topBlack{
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .fade{
+        padding-top: 100px;
+    }
+
+    /*  */
+
+    .lowerLogo{
+        margin-left: 24px;
+        width: 20%;
+        height: 30%;
+    }
+
+    .orangeBody{
+        column-gap: 10px;
+    }
+
+    .about{
+        margin-top: 70px;
+        margin-left: 10px;
+        font-size: 35px;
+        line-height: 0px;
+    }
+
+    .aboutDesc{
+        margin-top: 33px;
+        margin-left: 10px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .quoteFlex{
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-bottom: 105px;
+    }
+
+    .aboutQuote{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .aboutName{
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 350px;
+    }
+
+    .pic{
+        position: absolute;
+        margin-top: 350px;
+        margin-left: 200px;
+    }
+
+    .aimi{
+        width: 50%;
+    }
+}

@@ -1,0 +1,316 @@
+*{
+    margin: 0px;
+}
+
+.bkg{
+    position: relative;
+    background-image: url(./assets/homebkg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar */
+
+.top{
+    height: 203px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Font */
+
+.topBody, .white{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.topBody, .buyBtn, .brandName{
+    color: white;
+}
+
+/* Top Body */
+
+.topBody{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: radial-gradient(40% 50% at 20% 50%, #060606 0%, rgba(6, 6, 6, 0) 100%)
+}
+
+.new{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 122px;
+}
+
+.nature{
+    font-weight: bolder;
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: 7px;
+    margin-left: 122px;
+}
+
+.here{
+    font-weight: bolder;
+    font-size: 48px;
+    line-height: 58px;
+    margin-left: 122px;
+}
+
+.desc{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 38px;
+    margin-left: 122px;
+}
+
+.fade{
+    padding-top: 100px;
+    background: linear-gradient(360deg, #F1EEE9 20%, rgba(241, 238, 233, 0) 100%);
+}
+
+.tag{
+    width: 13%;
+}
+
+.buy{
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.buyBtn{
+    width: auto;
+    margin-top: 40px;
+    margin-left: 112px;
+    padding: 12px 15px 12px 15px;
+    border-radius: 25px;
+    border-width: 0;
+    background: #FF8C32;
+}
+
+/* Lower Body */
+
+.fades{
+    padding-top: 50px;
+    background: linear-gradient(180deg, #F1EEE9 1%, rgba(241, 238, 233, 0) 100%);
+}
+
+.white{
+    position: relative;
+    background-color: white;
+}
+
+.best{
+    margin-top: 50px;
+    margin-left: 122px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.brand{
+    display: flex;
+}
+
+.ori{
+    margin-top: 10px;
+    margin-left: 122px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+#divide{
+    display: block;
+    height: 270px;
+}
+
+/* Brand */
+
+.brandBox1, .brandBox2{
+    margin-top: 60px;
+    width: 250px;
+    height: 340px;
+    border-radius: 30px;
+    background-image: url(./assets/brandbox.jpg);
+    background-size: cover;
+}
+
+.brandName{
+    position: absolute;
+    margin-left: 27px;
+    margin-top: 280px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.brandBox1{
+    margin-left: 128px;
+}
+
+.brandBox2{
+    margin-left: 60px;
+}
+
+#box1, #box2, #box3, #box4{
+    transition: all 0.3s ease;
+}
+
+#box1:hover, #box2:hover, #box3:hover, #box4:hover{
+    margin-top: 30px;
+}
+
+#hovName, #hovDesc{
+    display: none;
+    margin-left: 128px;
+}
+
+#hovName{
+    margin-top: 35px;
+    font-weight: bolder;
+    font-size: 33px;
+}
+
+#hovDesc{
+    margin-top: 22px;
+    font-size: 20px;
+    margin-bottom: 149px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 800px){
+    /* Navbar */
+    
+    .top{
+        height: 100px;
+    }
+
+    
+    /* Top Body */
+    
+    .topBody{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: radial-gradient(60% 50% at 55% 50%, #060606 1%, rgba(6, 6, 6, 0) 100%)
+    }
+    
+    .new, .nature, .here, .desc, .best, .ori{
+        margin-left: 56px;
+    }
+
+    .new{
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 29px;
+    }
+    
+    .nature{
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 0px;
+    }
+    
+    .here{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .desc{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 38px;
+    }
+    
+    .fade{
+        padding-top: 100px;
+        padding-bottom: 30px;
+        background: linear-gradient(360deg, #F1EEE9 20%, rgba(241, 238, 233, 0) 100%);
+    }
+    
+    .tag{
+        width: 12%;
+    }
+    
+    .buy{
+        margin-left: 15px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    .buyBtn{
+        width: 25%;
+        margin-top: 40px;
+        margin-left: 55px;
+    }
+    
+    /* Lower Body */
+    
+    .fades{
+        padding-top: 50px;
+        background: linear-gradient(180deg, #F1EEE9 1%, rgba(241, 238, 233, 0) 100%);
+    }
+    
+    .white{
+        position: relative;
+        background-color: white;
+    }
+    
+    .best{
+        margin-top: 10px;
+        margin-left: 56px;
+        font-size: 25px;
+    }
+    
+    .ori{
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    #divide{
+        height: 158px;
+    }
+    
+    /* Brand */
+    
+    .brandBox1, .brandBox2{
+        margin-top: 60px;
+        width: 125px;
+        height: 170px;
+    }
+    
+    .brandName{
+        margin-left: 15px;
+        margin-top: 125px;
+        font-size: 20px;
+    }
+    
+    .brandBox1{
+        margin-left: 38px;
+    }
+    
+    .brandBox2{
+        margin-left: 30px;
+    }
+    
+    #hovName, #hovDesc{
+        margin-left: 52px;
+    }
+    
+    #hovName{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    
+    #hovDesc{
+        margin-top: 18px;
+        font-size: 16px;
+        margin-bottom: 70px;
+    }
+}
